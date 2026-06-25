@@ -75,10 +75,17 @@ packages:
     version: "1.1.2"
   cloud_firestore:
 <<<<<<< HEAD
+<<<<<<< HEAD
     dependency: "direct main"
 =======
     dependency: "direct dev"
 >>>>>>> 1d2f21d (Initial Commit)
+=======
+    dependency: "direct dev"
+=======
+    dependency: "direct main"
+>>>>>>> 50a8497 (Flutterfb config)
+>>>>>>> 844e74e (Flutterfb config)
     description:
       name: cloud_firestore
       sha256: "2d33da4465bdb81b6685c41b535895065adcb16261beb398f5f3bbc623979e9c"
@@ -175,10 +182,17 @@ packages:
     version: "7.0.1"
   firebase_auth:
 <<<<<<< HEAD
+<<<<<<< HEAD
     dependency: "direct main"
 =======
     dependency: "direct dev"
 >>>>>>> 1d2f21d (Initial Commit)
+=======
+    dependency: "direct dev"
+=======
+    dependency: "direct main"
+>>>>>>> 50a8497 (Flutterfb config)
+>>>>>>> 844e74e (Flutterfb config)
     description:
       name: firebase_auth
       sha256: "0fed2133bee1369ee1118c1fef27b2ce0d84c54b7819a2b17dada5cfec3b03ff"
@@ -203,10 +217,17 @@ packages:
     version: "5.15.3"
   firebase_core:
 <<<<<<< HEAD
+<<<<<<< HEAD
     dependency: "direct main"
 =======
     dependency: "direct dev"
 >>>>>>> 1d2f21d (Initial Commit)
+=======
+    dependency: "direct dev"
+=======
+    dependency: "direct main"
+>>>>>>> 50a8497 (Flutterfb config)
+>>>>>>> 844e74e (Flutterfb config)
     description:
       name: firebase_core
       sha256: "7be63a3f841fc9663342f7f3a011a42aef6a61066943c90b1c434d79d5c995c5"

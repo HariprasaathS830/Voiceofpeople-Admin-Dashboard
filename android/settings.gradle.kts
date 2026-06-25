@@ -20,6 +20,7 @@ pluginManagement {
 plugins {
     id("dev.flutter.flutter-plugin-loader") version "1.0.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
     id("com.android.application") version "8.11.1" apply false
     // START: FlutterFire Configuration
     id("com.google.gms.google-services") version("4.4.4") apply false
@@ -27,6 +28,26 @@ plugins {
 =======
     id("com.android.application") version "8.11.1" apply false
 >>>>>>> 1d2f21d (Initial Commit)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    id("com.android.application") version "8.11.1" apply false
+    // START: FlutterFire Configuration
+    id("com.google.gms.google-services") version("4.4.4") apply false
+    // END: FlutterFire Configuration
+=======
+    id("com.android.application") version "8.11.1" apply false
+>>>>>>> 1d2f21d (Initial Commit)
+=======
+    id("com.android.application") version "8.11.1" apply false
+=======
+    id("com.android.application") version "8.11.1" apply false
+    // START: FlutterFire Configuration
+    id("com.google.gms.google-services") version("4.4.4") apply false
+    // END: FlutterFire Configuration
+>>>>>>> 50a8497 (Flutterfb config)
+>>>>>>> 844e74e (Flutterfb config)
+>>>>>>> 6aecd48 (Merge master into my branch and resolved conflicts)
     id("org.jetbrains.kotlin.android") version "2.2.20" apply false
 }
 

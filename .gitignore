@@ -44,10 +44,18 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 844e74e (Flutterfb config)
 # Node Backend
 backend/node_modules/
 backend/src/serviceAccountKey.json
 backend/.env
 backend/package-lock.json
+<<<<<<< HEAD
 =======
 >>>>>>> 1d2f21d (Initial Commit)
+=======
+>>>>>>> 50a8497 (Flutterfb config)
+>>>>>>> 844e74e (Flutterfb config)
