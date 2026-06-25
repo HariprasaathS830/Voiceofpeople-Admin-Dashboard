@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "645515289454",
+    "project_id": "voiceofpeople-369d3",
+    "storage_bucket": "voiceofpeople-369d3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645515289454:android:d98ca14eac5ec0eb70577f",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMlwwb4jd-euTgG9B9R1g5fhdloDr_KPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645515289454:android:8d2e473939eeb7aa70577f",
+        "android_client_info": {
+          "package_name": "com.example.tvk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMlwwb4jd-euTgG9B9R1g5fhdloDr_KPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
