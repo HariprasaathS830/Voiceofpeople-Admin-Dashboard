@@ -1,7 +1,52 @@
+import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:http/http.dart' as http;
 
 class AnalyticsService {
   final _db = FirebaseFirestore.instance;
+
+  Future<List<Map<String, dynamic>>> getHeatmapData() async {
+    try {
+      // 1. Fetch all candidate documents from Firestore users collection
+      final snap = await _db
+          .collection('users')
+          .where('role', isEqualTo: 'general')
+          .get();
+
+      // 2. Extract regions/locations
+      final List<String> locations = [];
+      for (final doc in snap.docs) {
+        final data = doc.data();
+        final String? region = data['region'] as String?;
+        if (region != null && region.trim().isNotEmpty) {
+          locations.add(region.trim());
+        }
+      }
+
+      if (locations.isEmpty) {
+        return [];
+      }
+
+      // 3. Post to the backend geocoder endpoint
+      final url = Uri.parse('http://localhost:3000/api/heatmap');
+      final response = await http.post(
+        url,
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({'locations': locations}),
+      );
+
+      if (response.statusCode == 200) {
+        final List<dynamic> data = jsonDecode(response.body);
+        return List<Map<String, dynamic>>.from(data);
+      } else {
+        print('Backend error: ${response.statusCode} ${response.body}');
+        return [];
+      }
+    } catch (e) {
+      print('Error getting heatmap data: $e');
+      return [];
+    }
+  }
 
   Future<Map<String, dynamic>> getDashboardStats() async {
     final results = await Future.wait([
