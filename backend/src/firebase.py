@@ -1,5 +1,7 @@
 import os
+# pyrefly: ignore [missing-import]
 import firebase_admin
+# pyrefly: ignore [missing-import]
 from firebase_admin import credentials, firestore, auth
 
 # Get the directory of the current file to load serviceAccountKey.json relative to it
