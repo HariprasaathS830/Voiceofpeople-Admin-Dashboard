@@ -17,6 +17,7 @@ class SidebarWidget extends StatelessWidget {
     (Icons.dashboard_outlined, Icons.dashboard, 'Dashboard'),
     (Icons.volunteer_activism_outlined, Icons.volunteer_activism, 'Volunteers'),
     (Icons.people_outline, Icons.people, 'Candidates'),
+    (Icons.map_outlined, Icons.map, 'Heatmap'),
   ];
 
   @override

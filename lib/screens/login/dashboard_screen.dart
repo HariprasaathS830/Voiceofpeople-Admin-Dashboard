@@ -1,4 +1,5 @@
 import 'package:app/core/app_theme.dart';
+import 'package:app/screens/login/dashboard/heatmap_screen.dart';
 import 'package:app/screens/login/dashboard/volunteers/candidates/candidates_screen.dart';
 import 'package:app/screens/login/dashboard/volunteers/candidates/overview_tab.dart';
 import 'package:app/screens/login/volunteers_screen.dart';
@@ -17,8 +18,8 @@ class DashboardScreen extends StatefulWidget {
 class _DashboardScreenState extends State<DashboardScreen> {
   int _selectedIndex = 0;
 
-  static const _titles = ['Dashboard', 'Volunteer Management', 'Candidate Management'];
-  static const _screens = [OverviewTab(), VolunteersScreen(), CandidatesScreen()];
+  static const _titles = ['Dashboard', 'Volunteer Management', 'Candidate Management', 'Heatmap Analysis'];
+  static const _screens = [OverviewTab(), VolunteersScreen(), CandidatesScreen(), HeatmapScreen()];
 
   @override
   Widget build(BuildContext context) {
